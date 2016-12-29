@@ -1,0 +1,1773 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="0" name="BigLibraryTest" package="library" skipped="0" tests="2" time="0.088" timestamp="2016-12-05T17:03:44">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BigLibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.BigLibraryTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher4816716628737659044.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit7363747789519148136.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running your tests against your implementation." />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.BigLibraryTest" name="testAssertionsEnabled" time="0.001" />
+
+      <testcase classname="library.BigLibraryTest" name="testExampleTest" time="0.001" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="1" name="BookCopyTest" package="library" skipped="0" tests="6" time="0.065" timestamp="2016-12-05T17:03:45">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BookCopyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.BookCopyTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher5015297560174305610.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit2877953317734259851.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running your tests against your implementation." />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.BookCopyTest" name="testToString" time="0.002" />
+
+      <testcase classname="library.BookCopyTest" name="testSetConditionDamaged" time="0.0" />
+
+      <testcase classname="library.BookCopyTest" name="testGetConditionGood" time="0.0" />
+
+      <testcase classname="library.BookCopyTest" name="testGetBook" time="0.0" />
+
+      <testcase classname="library.BookCopyTest" name="testAssertionsEnabled" time="0.0" />
+
+      <testcase classname="library.BookCopyTest" name="testExampleTest" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="2" name="BookTest" package="library" skipped="0" tests="9" time="0.062" timestamp="2016-12-05T17:03:45">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.BookTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher2881481764910479123.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit7514542911087171575.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running your tests against your implementation." />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.BookTest" name="testToString" time="0.001" />
+
+      <testcase classname="library.BookTest" name="testGetterForYearOneDigitYear" time="0.0" />
+
+      <testcase classname="library.BookTest" name="testAssertionsEnabled" time="0.0" />
+
+      <testcase classname="library.BookTest" name="testGetterForAuthorsOneName" time="0.0" />
+
+      <testcase classname="library.BookTest" name="testGetterForAuthorsMultipleNames" time="0.0" />
+
+      <testcase classname="library.BookTest" name="testGetterForYearMultipleDigitYear" time="0.0" />
+
+      <testcase classname="library.BookTest" name="testExampleTest" time="0.0" />
+
+      <testcase classname="library.BookTest" name="testGetterForTitleNoSpace" time="0.0" />
+
+      <testcase classname="library.BookTest" name="testGetterForTitleWithSpace" time="0.001" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="3" name="LibraryTest" package="library" skipped="0" tests="24" time="0.086" timestamp="2016-12-05T17:03:45">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.LibraryTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher4549551021833579445.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit7018709117383509926.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running your tests against your implementation." />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.LibraryTest" name="testCheckout[library.SmallLibrary]" time="0.003" />
+
+      <testcase classname="library.LibraryTest" name="testBuy[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testFind[library.SmallLibrary]" time="0.004" />
+
+      <testcase classname="library.LibraryTest" name="testLose[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testAllCopiesOneCopy[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testIsAvailableTrue[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testAssertionsEnabled[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testIsAvailableFalse[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testAllAvailableCopies[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testCheckin[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testAllCopiesMultCopy[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testExampleTest[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testCheckout[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.LibraryTest" name="testBuy[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testFind[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testLose[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testAllCopiesOneCopy[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.LibraryTest" name="testIsAvailableTrue[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testAssertionsEnabled[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testIsAvailableFalse[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.LibraryTest" name="testAllAvailableCopies[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testCheckin[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.LibraryTest" name="testAllCopiesMultCopy[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.LibraryTest" name="testExampleTest[library.BigLibrary]" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="4" name="BookCopyTest" package="library.beta" skipped="0" tests="4" time="0.069" timestamp="2016-12-05T17:03:46">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.BookCopyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.beta.BookCopyTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher4941310296415706467.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit5441468408234305718.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our beta tests against your implementation." />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.beta.BookCopyTest" name="testEqualsHashcode" time="0.002" />
+
+      <testcase classname="library.beta.BookCopyTest" name="testGetBook" time="0.001" />
+
+      <testcase classname="library.beta.BookCopyTest" name="testAssertionsEnabled" time="0.001" />
+
+      <testcase classname="library.beta.BookCopyTest" name="testCondition" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="5" name="BookTest" package="library.beta" skipped="0" tests="4" time="0.063" timestamp="2016-12-05T17:03:46">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.beta.BookTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher3920011649178884721.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit4769302591427359828.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our beta tests against your implementation." />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.beta.BookTest" name="testNormalBook" time="0.002" />
+
+      <testcase classname="library.beta.BookTest" name="testEqualsHashCode" time="0.0" />
+
+      <testcase classname="library.beta.BookTest" name="testAssertionsEnabled" time="0.001" />
+
+      <testcase classname="library.beta.BookTest" name="testMinimalBook" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="6" name="LibraryTest" package="library.beta" skipped="0" tests="16" time="0.073" timestamp="2016-12-05T17:03:46">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.beta.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.beta.LibraryTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher1052707559456777358.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit1856024450059017722.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our beta tests against your implementation." />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.beta.LibraryTest" name="testBuy[library.SmallLibrary]" time="0.002" />
+
+      <testcase classname="library.beta.LibraryTest" name="testFind[library.SmallLibrary]" time="0.003" />
+
+      <testcase classname="library.beta.LibraryTest" name="testLose[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.beta.LibraryTest" name="testAllCopiesAvailableCopies[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.beta.LibraryTest" name="testEqualsHashcode[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.beta.LibraryTest" name="testAssertionsEnabled[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.beta.LibraryTest" name="testIsAvailable[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.beta.LibraryTest" name="testCheckinCheckout[library.SmallLibrary]" time="0.001" />
+
+      <testcase classname="library.beta.LibraryTest" name="testBuy[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.beta.LibraryTest" name="testFind[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.beta.LibraryTest" name="testLose[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.beta.LibraryTest" name="testAllCopiesAvailableCopies[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.beta.LibraryTest" name="testEqualsHashcode[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.beta.LibraryTest" name="testAssertionsEnabled[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.beta.LibraryTest" name="testIsAvailable[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.beta.LibraryTest" name="testCheckinCheckout[library.BigLibrary]" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="7" name="BookTest" package="library.staff" skipped="0" tests="2" time="0.065" timestamp="2016-12-05T17:03:47">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.staff.BookTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.staff.BookTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher6239026844776599754.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit8822782213569255156.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-tests-final:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.staff.BookTest" name="testRepExposureInGetAuthors" time="0.002" />
+
+      <testcase classname="library.staff.BookTest" name="testRepExposureInConstructor" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="8" name="LibraryTest" package="library.staff" skipped="0" tests="12" time="0.073" timestamp="2016-12-05T17:03:47">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.staff.LibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.staff.LibraryTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher5638392657833721009.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit2833835170225708242.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-tests-final:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.staff.LibraryTest" name="testDifferentObjectsRepresentingSameBook[library.SmallLibrary]" time="0.003" />
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingLastCopy[library.SmallLibrary]" time="0.003" />
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingAndRebuyingBook[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAllCopies[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAvailableCopies[library.SmallLibrary]" time="0.0" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInFind[library.SmallLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testDifferentObjectsRepresentingSameBook[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingLastCopy[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testFindAfterLosingAndRebuyingBook[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAllCopies[library.BigLibrary]" time="0.001" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInAvailableCopies[library.BigLibrary]" time="0.0" />
+
+      <testcase classname="library.staff.LibraryTest" name="testRepExposureInFind[library.BigLibrary]" time="0.001" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Normans-MBP-3" id="9" name="SmallLibraryTest" package="library.staff" skipped="0" tests="1" time="0.068" timestamp="2016-12-05T17:03:47">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="build.sysclasspath" value="ignore" />
+
+          <property name="os.name" value="Mac OS X" />
+
+          <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes" />
+
+          <property name="final.grading" value="true" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+
+          <property name="java.runtime.version" value="1.8.0_102-b14" />
+
+          <property name="user.name" value="Norm" />
+
+          <property name="ant.build.javac.target" value="1.8" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib" />
+
+          <property name="grader.report.file" value="my-grader-report.xml" />
+
+          <property name="ant.project.default-target" value="all" />
+
+          <property name="java.version" value="1.8.0_102" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/Users/Norm/Documents/workspace/ps3-library/grader.xml" />
+
+          <property name="os.version" value="10.12.1" />
+
+          <property name="final.grader.jar" value="ps3-final-grader.jar" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.102-b14" />
+
+          <property name="ant.library.dir" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+
+          <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+
+          <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+
+          <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+
+          <property name="user.home" value="/Users/Norm" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="which.tests.ran" value="BETA + FINAL" />
+
+          <property name="java.library.path" value="/Users/Norm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="gopherProxySet" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="beta.grader.jar" value="ps3-beta-grader.jar" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner library.staff.SmallLibraryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Norm/Documents/workspace/ps3-library/.grader/TEST-library.staff.SmallLibraryTest.xml crashfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junitvmwatcher1509657579768176948.properties propsfile=/Users/Norm/Documents/workspace/ps3-library/.grader/junit6394687881301805430.properties" />
+
+          <property name="java.class.path" value="/Users/Norm/Documents/workspace/ps3-library/lib/junit-4.12.jar:/Users/Norm/Documents/workspace/ps3-library/lib/hamcrest-core-1.3.jar:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-tests-final:/Users/Norm/Documents/workspace/ps3-library/.grader/bin-student:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+
+          <property name="project.name" value="ps3-library" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="didit.desc" value="Running our tests against your implementation" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.io.tmpdir" value="/var/folders/rm/jy9wd0n13j3gwz7_png33lmc0000gn/T/" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="x86_64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/Users/Norm/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+
+          <property name="user.dir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="zipfile" value="my-submission.zip" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="problem.set" value="ps3" />
+
+          <property name="basedir" value="/Users/Norm/Documents/workspace/ps3-library" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/Users/Norm/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="grader.dir" value=".grader" />
+
+          <property name="ant.project.invoked-targets" value="all" />
+
+      </properties>
+
+      <testcase classname="library.staff.SmallLibraryTest" name="testUsesTheGivenRep" time="0.001" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
