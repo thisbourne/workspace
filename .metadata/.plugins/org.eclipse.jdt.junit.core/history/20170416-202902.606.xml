@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BoardTest" project="ps2-minesweeper" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="minesweeper.BoardTest" time="0.001">
+    <testcase name="testBoardDig" classname="minesweeper.BoardTest" time="0.001"/>
+    <testcase name="testBoardDigBomb" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardLook" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardDigBombClear" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testNewBaord1" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testNewBaord2" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testNewBaord3" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testAssertionsEnabled" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardDigBombClear2" classname="minesweeper.BoardTest" time="0.0"/>
+  </testsuite>
+</testrun>

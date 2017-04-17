@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PublishedTest" tests="12" started="12" failures="7" errors="0" ignored="0">
+  <testsuite name="autograder.PublishedTest" time="1.13">
+    <testcase name="publishedTest" classname="autograder.PublishedTest" time="1.068"/>
+  </testsuite>
+  <testsuite name="minesweeper.BoardTest" time="0.102">
+    <testcase name="testBoardDig" classname="minesweeper.BoardTest" time="0.007">
+      <failure>junit.framework.AssertionFailedError: expect all 2 at 0,3 expected:&lt;... - -
+- - - -
+- - - -[
+]&gt; but was:&lt;... - -
+- - - -
+- - - -[]&gt;
+	at minesweeper.BoardTest.testBoardDig(BoardTest.java:161)
+</failure>
+    </testcase>
+    <testcase name="testBoardDigBomb" classname="minesweeper.BoardTest" time="0.001">
+      <failure>junit.framework.AssertionFailedError: expect all 2 at 0,2 expected:&lt;... - -
+- - - -
+- - - -[
+]&gt; but was:&lt;... - -
+- - - -
+- - - -[]&gt;
+	at minesweeper.BoardTest.testBoardDigBomb(BoardTest.java:172)
+</failure>
+    </testcase>
+    <testcase name="testBoardFlag" classname="minesweeper.BoardTest" time="0.001">
+      <failure>junit.framework.AssertionFailedError: expected boards to match expected:&lt;... - -
+- - - -
+- - - F[
+]&gt; but was:&lt;... - -
+- - - -
+- - - F[]&gt;
+	at minesweeper.BoardTest.testBoardFlag(BoardTest.java:208)
+</failure>
+    </testcase>
+    <testcase name="testBoardLook" classname="minesweeper.BoardTest" time="0.001">
+      <failure>junit.framework.AssertionFailedError: expect all - expected:&lt;... - -
+- - - -
+- - - -[
+]&gt; but was:&lt;... - -
+- - - -
+- - - -[]&gt;
+	at minesweeper.BoardTest.testBoardLook(BoardTest.java:150)
+</failure>
+    </testcase>
+    <testcase name="testBoardDigBombClear" classname="minesweeper.BoardTest" time="0.001">
+      <failure>junit.framework.AssertionFailedError: expect all spaces at bottom quad expected:&lt;... 2 1
+- 2    
+- 2    [
+]&gt; but was:&lt;... 2 1
+- 2    
+- 2    []&gt;
+	at minesweeper.BoardTest.testBoardDigBombClear(BoardTest.java:184)
+</failure>
+    </testcase>
+    <testcase name="testNewBaord1" classname="minesweeper.BoardTest" time="0.001"/>
+    <testcase name="testNewBaord2" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testNewBaord3" classname="minesweeper.BoardTest" time="0.001"/>
+    <testcase name="testAssertionsEnabled" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardDigBombClear2" classname="minesweeper.BoardTest" time="0.001">
+      <failure>junit.framework.AssertionFailedError: expected boards to match expected:&lt;... - -
+- 2 1 1
+- 1    [
+]&gt; but was:&lt;... - -
+- 2 1 1
+- 1    []&gt;
+	at minesweeper.BoardTest.testBoardDigBombClear2(BoardTest.java:196)
+</failure>
+    </testcase>
+    <testcase name="testBoardDeflag" classname="minesweeper.BoardTest" time="0.001">
+      <failure>junit.framework.AssertionFailedError: expected boards to match expected:&lt;... - F
+- - - -
+- - - F[
+]&gt; but was:&lt;... - F
+- - - -
+- - - F[]&gt;
+	at minesweeper.BoardTest.testBoardDeflag(BoardTest.java:221)
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

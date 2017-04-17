@@ -1,0 +1,28 @@
+package minesweeper.server;
+
+import java.net.*;
+import java.io.*;
+
+public class MinesweeperServerThread implements Runnable {
+    
+    private Socket socket = null;
+    
+    public MinesweeperServerThread(Socket socket){
+        this.socket = socket;
+    }
+
+    @Override
+    public void run() {
+        // TODO Auto-generated method stub
+        
+        try {
+            handleConnection(socket);
+        } catch (IOException ioe) {
+            ioe.printStackTrace(); // but don't terminate serve()
+        } finally {
+            socket.close();
+        }
+
+    }
+
+}

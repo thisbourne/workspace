@@ -1,0 +1,47 @@
+package minesweeper;
+
+
+
+public class BoardSquare {
+    
+    //rep
+    //private final int row;
+    //private final int column;
+    private boolean bomb;
+    private int proximityBombs;
+    private char flag;
+    
+    //private final Set<BoardSquare> neighbors;
+    
+    BoardSquare(boolean bomb, int proximityBombs, char flag){
+        //this.row = row;
+        //this.column = column;
+        this.bomb = bomb;
+        this.proximityBombs = proximityBombs;
+        this.flag = flag;
+    }
+    
+    public boolean getBomb() {
+        boolean result = bomb ? true : false;
+        return result;
+    }
+    
+    public void setBomb(boolean bomb){
+        this.bomb = bomb;
+    }
+    
+    public void setProximityBombs(int bombs){
+        this.proximityBombs = bombs;
+    }
+    
+    public char getFlag(){
+        //char result = flag;
+        return flag;
+    }
+    
+    public void setFlag( char flag){
+        this.flag = flag;
+    }
+    
+
+}

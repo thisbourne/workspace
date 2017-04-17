@@ -1,0 +1,15 @@
+package minesweeper.server;
+
+public class MinesweeperServerThread implements Runnable {
+    
+    public MinesweeperServerThread(Socket socket){
+        
+    }
+
+    @Override
+    public void run() {
+        // TODO Auto-generated method stub
+
+    }
+
+}

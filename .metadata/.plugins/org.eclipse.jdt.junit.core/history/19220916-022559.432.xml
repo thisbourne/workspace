@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PublishedTest" tests="12" started="12" failures="0" errors="1" ignored="0">
+  <testsuite name="autograder.PublishedTest" time="4.132">
+    <testcase name="publishedTest" classname="autograder.PublishedTest" time="4.072">
+      <error>java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at autograder.PublishedTest.publishedTest(PublishedTest.java:103)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="minesweeper.BoardTest" time="0.083">
+    <testcase name="testBoardDig" classname="minesweeper.BoardTest" time="0.001"/>
+    <testcase name="testBoardDigBomb" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardFlag" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardLook" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardDigBombClear" classname="minesweeper.BoardTest" time="0.001"/>
+    <testcase name="testNewBaord1" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testNewBaord2" classname="minesweeper.BoardTest" time="0.001"/>
+    <testcase name="testNewBaord3" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testAssertionsEnabled" classname="minesweeper.BoardTest" time="0.001"/>
+    <testcase name="testBoardDigBombClear2" classname="minesweeper.BoardTest" time="0.0"/>
+    <testcase name="testBoardDeflag" classname="minesweeper.BoardTest" time="0.001"/>
+  </testsuite>
+</testrun>

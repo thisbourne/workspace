@@ -1,0 +1,23 @@
+package minesweeper;
+
+
+
+public class BoardSquare {
+    
+    //rep
+    private final int row;
+    private final int column;
+    private boolean bomb;
+    private int proximityBombs;
+    
+    //private final Set<BoardSquare> neighbors;
+    
+    BoardSquare(int row, int column, boolean bomb, int proximityBombs){
+        this.row = row;
+        this.column = column;
+        this.bomb = bomb;
+        this.proximityBombs = proximityBombs;
+    }
+    
+
+}

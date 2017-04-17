@@ -1,0 +1,22 @@
+package minesweeper;
+
+import java.
+
+public class BoardSquare {
+    
+    //rep
+    private final int row;
+    private final int column;
+    private final boolean bomb;
+    private final int proximityBombs;
+    //private final Set<BoardSquare> neighbors;
+    
+    BoardSquare(int row, int column, boolean bomb, int proximityBombs, Set<BoardSquare neighbors>){
+        this.row = row;
+        this.column = column;
+        this.bomb = bomb;
+        this.proximityBombs = proximityBombs;
+    }
+    
+
+}

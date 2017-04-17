@@ -1,0 +1,32 @@
+/* Copyright (c) 2007-2017 MIT 6.005 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+package minesweeper;
+
+/**
+ * TODO: Specification
+ */
+public class Board {
+    
+    //rep
+    private final char[] board = null;
+    private final int rows = null;
+    private final int columns = null;
+    
+    // Abstraction function:
+    // the board array represents the minesweeper board state in which element 0 represents the state of board square 0,0
+    // the board state for each row occurs consecutively in the character array; 
+    // rows equals the number of rows in the board max of 10
+    // columns represents the number of columns of the board
+    // so, for example, the state of board square at 3, 2 where 3 is the row and 2 is the column will be at 
+    // the element (3 + 1) * (columns) + 2 + 1;
+    
+    // Rep Invariant:
+    // 0 < rows <= 10;
+    
+    // TODO: Abstraction function, rep invariant, rep exposure, thread safety
+     
+    
+    // TODO: Specify, test, and implement in problem 2
+    
+}

@@ -1,0 +1,201 @@
+/* Copyright (c) 2007-2017 MIT 6.005 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+package minesweeper;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ * TODO: Description
+ */
+public class BoardTest {
+    
+    // TODO: Testing strategy
+    
+    private final String boardString1 ="0 1 1 0\n0 0 1 0\n0 0 0 0\n1 0 0 0\n";
+    private final String boardString2 ="0 1 1 0\r0 0 1 0\n0 0 0 0\r1 0 0 0\r";
+    private final String boardString3 ="0 1 1 0\r\n0 0 1 0\r\n0 0 0 0\r\n1 0 0 0\r\n";
+    private final String boardString4 ="0 1 1 0\n0 0 0 0\n1 0 0 0\n1 0 0 0\n";
+    
+    @Test(expected=AssertionError.class)
+    public void testAssertionsEnabled() {
+        assert false; // make sure assertions are enabled with VM argument: -ea
+    }
+    
+    @Test()
+    public void testNewBaord1(){
+        Board board = new Board(4, 4, boardString1);
+        assertEquals("expect false", false, board.getSquare(0, 0).getBomb());
+        assertEquals("expect true", true, board.getSquare(0, 1).getBomb());
+        assertEquals("expect true", true, board.getSquare(0, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(0, 3).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 1).getBomb());
+        assertEquals("expect true", true, board.getSquare(1, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 3).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 1).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 3).getBomb());
+        assertEquals("expect true", true, board.getSquare(3, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 1).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 3).getBomb());
+        
+        
+        assertEquals("expect 1", 1, board.getSquare(0, 0).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 1).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 2).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 3).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(1, 0).getProximityBombs());
+        assertEquals("expect 3", 3, board.getSquare(1, 1).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(1, 2).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(1, 3).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 0).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(2, 1).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 2).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 3).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 0).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(3, 1).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 2).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 3).getProximityBombs());
+    }
+    
+    @Test()
+    public void testNewBaord2(){
+        Board board = new Board(4, 4, boardString2);
+        assertEquals("expect false", false, board.getSquare(0, 0).getBomb());
+        assertEquals("expect true", true, board.getSquare(0, 1).getBomb());
+        assertEquals("expect true", true, board.getSquare(0, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(0, 3).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 1).getBomb());
+        assertEquals("expect true", true, board.getSquare(1, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 3).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 1).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 3).getBomb());
+        assertEquals("expect true", true, board.getSquare(3, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 1).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 3).getBomb());
+        
+        
+        assertEquals("expect 1", 1, board.getSquare(0, 0).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 1).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 2).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 3).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(1, 0).getProximityBombs());
+        assertEquals("expect 3", 3, board.getSquare(1, 1).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(1, 2).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(1, 3).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 0).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(2, 1).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 2).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 3).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 0).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(3, 1).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 2).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 3).getProximityBombs());
+    }
+    
+    @Test()
+    public void testNewBaord3(){
+        Board board = new Board(4, 4, boardString3);
+        assertEquals("expect false", false, board.getSquare(0, 0).getBomb());
+        assertEquals("expect true", true, board.getSquare(0, 1).getBomb());
+        assertEquals("expect true", true, board.getSquare(0, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(0, 3).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 1).getBomb());
+        assertEquals("expect true", true, board.getSquare(1, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(1, 3).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 1).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(2, 3).getBomb());
+        assertEquals("expect true", true, board.getSquare(3, 0).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 1).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 2).getBomb());
+        assertEquals("expect false", false, board.getSquare(3, 3).getBomb());
+        
+        
+        assertEquals("expect 1", 1, board.getSquare(0, 0).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 1).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 2).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(0, 3).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(1, 0).getProximityBombs());
+        assertEquals("expect 3", 3, board.getSquare(1, 1).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(1, 2).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(1, 3).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 0).getProximityBombs());
+        assertEquals("expect 2", 2, board.getSquare(2, 1).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 2).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(2, 3).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 0).getProximityBombs());
+        assertEquals("expect 1", 1, board.getSquare(3, 1).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 2).getProximityBombs());
+        assertEquals("expect 0", 0, board.getSquare(3, 3).getProximityBombs());
+    }
+    
+    @Test()
+    public void testBoardLook(){
+        Board board = new Board(4, 4, boardString1);
+        //System.out.print(boardString1);
+        String board1Look = "- - - -\n- - - -\n- - - -\n- - - -\n";
+        //System.out.print("test string is: \n" +board1Look);
+        //System.out.print("the board.look function is: \n" + board.look());
+        assertEquals("expect all -", board1Look, board.look());
+    }
+    
+    @Test()
+    public void testBoardDig(){
+        Board board = new Board(4, 4, boardString1);
+        board.dig(0, 3);
+        //System.out.print(boardString1);
+        String boardLook = "- - - 2\n- - - -\n- - - -\n- - - -\n";
+        //System.out.print("test string is: \n" +board1Look);
+        //System.out.print("the board.look function is: \n" + board.look());
+        assertEquals("expect all 2 at 0,3", boardLook, board.look());
+    }
+    
+    @Test()
+    public void testBoardDigBomb(){
+        Board board = new Board(4, 4, boardString1);
+        board.dig(0, 2);
+        //System.out.print(boardString1);
+        String boardLook = "- - 2 -\n- - - -\n- - - -\n- - - -\n";
+        //System.out.print("test string is: \n" +board1Look);
+        //System.out.print("the board.look function is: \n" + board.look());
+        assertEquals("expect all 2 at 0,2", boardLook, board.look());
+    }
+    
+    @Test()
+    public void testBoardDigBombClear(){
+        Board board = new Board(4, 4, boardString4);
+        System.out.print("the board before the dig is :\n" + board.look());
+        board.dig(3,3);
+        //System.out.print(boardString1);
+        String boardLook = "- - - -\n- - - -\n- 2 1 1\n- 1    \n";
+        System.out.print("test string is: \n" + boardLook);
+        System.out.print("the board.look function is: \n" + board.look());
+        assertEquals("expect all spaces at bottom quad", boardLook, board.look());
+    }
+    
+    @Test()
+    public void testBoardDigBombClear2(){
+        Board board = new Board(4, 4, boardString1);
+        System.out.print("the board before the dig is :\n" + board.look());
+        board.dig(3,3);
+        //System.out.print(boardString1);
+        String boardLook = "- - - -\n- 3 2 1\n- 2    \n- 2    \n";
+        System.out.print("test string is: \n" + boardLook);
+        System.out.print("the board.look function is: \n" + board.look());
+        assertEquals("expected boards to match", boardLook, board.look());
+    }
+    
+    // TODO: Tests
+    
+}

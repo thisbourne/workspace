@@ -1,0 +1,10 @@
+package minesweeper;
+
+public class BoardSquare {
+    
+    //rep
+    private final int row;
+    private final int column;
+    
+
+}
