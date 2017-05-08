@@ -8,6 +8,6 @@
 </listAttribute>
 <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="minesweeper.server.MinesweeperServer"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--file /Users/Norm/Documents/workspace/ps2-minesweeper/.grader/tests-beta/autograder/boards/board_file_5"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--size 13,5"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ps2-minesweeper"/>
 </launchConfiguration>

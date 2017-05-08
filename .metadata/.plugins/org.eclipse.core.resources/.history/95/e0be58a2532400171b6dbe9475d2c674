@@ -1,0 +1,5 @@
+package minesweeper.server;
+
+public class BoardReply {
+
+}

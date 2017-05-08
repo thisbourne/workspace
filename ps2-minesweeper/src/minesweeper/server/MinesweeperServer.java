@@ -6,6 +6,7 @@ package minesweeper.server;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.util.concurrent.*;
 
 
 import minesweeper.Board;
@@ -30,8 +31,11 @@ public class MinesweeperServer {
     /** True if the server should *not* disconnect a client after a BOOM message. */
     private final boolean debug;
     
-    private static Board gameBoard;
+    private final Board gameBoard;
     private int numberOfUsers;
+    private final BlockingQueue<BoardRequest> request;
+    private final BlockingQueue<BoardReply> reply;
+    
 
     // TODO: Abstraction function, rep invariant, rep exposure
 
@@ -42,10 +46,13 @@ public class MinesweeperServer {
      * @param debug debug mode flag
      * @throws IOException if an error occurs opening the server socket
      */
-    public MinesweeperServer(int port, boolean debug) throws IOException {
+    public MinesweeperServer(int port, boolean debug, int sizeX, int sizeY, String boardString) throws IOException {
         serverSocket = new ServerSocket(port);
         this.debug = debug;
         numberOfUsers = 0;
+        gameBoard = new Board(sizeY, sizeX, boardString);
+        request = new ArrayBlockingQueue<BoardRequest>(1);
+        reply = new ArrayBlockingQueue<BoardReply>(1);
     }
 
     /**
@@ -72,6 +79,56 @@ public class MinesweeperServer {
                 socket.close();
             }
         }*/
+        
+        //create thread to guard Board ADT instance
+        
+        new Thread(new Runnable(){
+            public void run() {
+                BoardReply outReply;
+                int x, y;
+                while(!Thread.interrupted()){
+                    try{
+                        System.out.println("In Board thread waiting for a new request");
+                        BoardRequest inRequest = request.take();
+                        
+                        switch(inRequest.getRequest()){
+                        case "look":
+                            System.out.println("Got a loop request");
+                            outReply = new BoardReply(gameBoard.look(), false);
+                            System.out.println("Replying with message: \n" +outReply.getMessage());
+                            reply.put(outReply);
+                            System.out.println("Sent outReply");
+                            break;
+                        case "dig":
+                            x = inRequest.getX();
+                            y = inRequest.getY();
+                            boolean bomb = gameBoard.dig(x, y);
+                            outReply = new BoardReply(gameBoard.look(), bomb);
+                            reply.put(outReply);
+                            break;
+                        case "flag":
+                            x = inRequest.getX();
+                            y = inRequest.getY();
+                            gameBoard.flag(x, y);
+                            outReply = new BoardReply(gameBoard.look(), false);
+                            reply.put(outReply);
+                            break;
+                        case "deflag":
+                            x = inRequest.getX();
+                            y = inRequest.getY();
+                            gameBoard.deflag(x, y);
+                            outReply = new BoardReply(gameBoard.look(), false);
+                            reply.put(outReply);
+                            break;
+                        }
+                    } catch (InterruptedException ie) {
+                        break;
+                    }
+                }
+            }
+        }).start();
+        
+        //wait for new connection and start new thread for each client
         System.out.print("The game board in the server is:\n" + gameBoard.look());
         while (true) {
             // block until a client connects
@@ -120,6 +177,7 @@ public class MinesweeperServer {
                 if (output != null) {
                     // TODO: Consider improving spec of handleRequest to avoid use of null
                     out.println(output);
+                    if (output.equals("BOOM!") && !debug) break;
                 }
                 else break;
             }
@@ -148,7 +206,19 @@ public class MinesweeperServer {
         }
         String[] tokens = input.split(" ");
         if (tokens[0].equals("look")) {
-            return gameBoard.look();
+            try{
+                System.out.println("got a look request from client");
+                BoardRequest outRequest = new BoardRequest("look");
+                System.out.println("the look request being qued is: " + outRequest.getRequest());
+                request.put(outRequest);
+                System.out.println("the outRequest has been put on the request que");
+                BoardReply inReply = reply.take();
+                System.out.println("got a look reply from gameBaord\n" + inReply.getMessage());
+                return inReply.getMessage();
+            } catch (InterruptedException ie) {
+                throw new RuntimeException();
+            }
+            //return gameBoard.look();
             // 'look' request
             // TODO Problem 5
         } else if (tokens[0].equals("help")) {
@@ -168,6 +238,20 @@ public class MinesweeperServer {
             if (tokens[0].equals("dig")) {
                 // 'dig x y' request
                 // TODO Problem 5
+                try{
+                    BoardRequest outRequest = new BoardRequest("dig", y, x);
+                    request.put(outRequest);
+                    BoardReply inReply = reply.take();
+                    if (inReply.getBomb()){
+                        return "BOOM!";
+                    }
+                    else{
+                        return inReply.getMessage();
+                    }
+                } catch (InterruptedException ie) {
+                    throw new RuntimeException();
+                }
+                /*
                 boolean isbomb = gameBoard.dig(y, x);
                 if (isbomb){
                     response = "BOOM!";
@@ -175,17 +259,37 @@ public class MinesweeperServer {
                 }
                 else{
                     return gameBoard.look();
-                }
+                }*/
             } else if (tokens[0].equals("flag")) {
                 // 'flag x y' request
                 // TODO Problem 5
+                try{
+                    BoardRequest outRequest = new BoardRequest("flag", y, x);
+                    request.put(outRequest);
+                    BoardReply inReply = reply.take();
+                    return inReply.getMessage();
+                } catch (InterruptedException ie) {
+                    throw new RuntimeException();
+                }
+                /*
                 gameBoard.flag(y, x);
                 return gameBoard.look();
+                */
             } else if (tokens[0].equals("deflag")) {
                 // 'deflag x y' request
                 // TODO Problem 5
+                try{
+                    BoardRequest outRequest = new BoardRequest("deflag", y, x);
+                    request.put(outRequest);
+                    BoardReply inReply = reply.take();
+                    return inReply.getMessage();
+                } catch (InterruptedException ie) {
+                    throw new RuntimeException();
+                }
+                /*
                 gameBoard.deflag(y, x);
                 return gameBoard.look();
+                */
             }
         }
         // TODO: Should never get here, make sure to return in each of the cases above
@@ -323,8 +427,8 @@ public class MinesweeperServer {
         }
         else{
             Random randProbability = new Random();
-            for (int j=0; j<sizeX; j++){
-                for (int i=0; i<sizeY; i++){
+            for (int j=0; j<sizeY; j++){
+                for (int i=0; i<sizeX; i++){
                     boolean isBomb = randProbability.nextFloat() <= .25 ? true : false;
                     if(isBomb){
                         boardString = boardString + "1 ";
@@ -333,19 +437,20 @@ public class MinesweeperServer {
                         boardString = boardString + "0 ";
                     }
                 }
-                boardString = boardString.substring(0,(2*(j+1)*sizeY)-1) + "\n";
+                boardString = boardString.substring(0,(2*(j+1)*sizeX)-1) + "\n";
             }
         }
         
-        System.out.print(boardString);
-        gameBoard = new Board(sizeX, sizeY, boardString);
-        System.out.println("The game board is: \n" + gameBoard.look());
-        
-        // TODO: Continue implementation here in problem 4
         System.out.println("The port is: " + port);
         System.out.println("debug value is: " + debug);
+        System.out.print("The boardString is: \n" + boardString);
+        //gameBoard = new Board(sizeX, sizeY, boardString);
+        //System.out.println("The game board is: \n" + gameBoard.look());
         
-        MinesweeperServer server = new MinesweeperServer(port, debug);
+        // TODO: Continue implementation here in problem 4
+        
+        
+        MinesweeperServer server = new MinesweeperServer(port, debug, sizeX, sizeY, boardString);
         server.serve();
     }
 }

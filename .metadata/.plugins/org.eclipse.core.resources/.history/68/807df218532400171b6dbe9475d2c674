@@ -1,0 +1,14 @@
+package minesweeper.server;
+
+public class BoardRequest {
+
+    private final String request;
+    private final int x; 
+    private final int y;
+    
+    BoardRequest(String request, int x, int y){
+        this.x = x;
+        this.y = y;
+        this.request = request;
+    }
+}

@@ -1,0 +1,20 @@
+package minesweeper.server;
+
+public class BoardReply {
+
+    private final String board;
+    private final boolean bomb;
+    
+    public BoardReply(String board, boolean bomb){
+        this.board = board;
+        this.bomb = bomb;
+    }
+    
+    public String getBoard(){
+        return board;
+    }
+    
+    public boolean getBomb(){
+        return bomb;
+    }
+}

@@ -45,7 +45,7 @@ public class Board {
         String result = "";
         for( int j= 0; j < rows; j++){
             for( int i = 0; i < columns; i++){
-                result = result + board[(j * rows) + i].getState()+ " ";
+                result = result + board[(j * columns) + i].getState()+ " ";
             }
             result = result.substring(0,(2*(j+1)*columns)-1) + "\n";
         }
@@ -61,7 +61,7 @@ public class Board {
         if ((x<0) || (x >= rows) || (y < 0) || (y >= columns)) return false;
         
         //get square
-        BoardSquare square = board[(rows *x) + y];
+        BoardSquare square = board[(columns *x) + y];
         //check if square is untouched
         if (square.getState() != '-') return false;
         //process dig request
@@ -88,7 +88,7 @@ public class Board {
         if ((x<0) || (x >= rows) || (y < 0) || (y >= columns)) return;
         
         //get square
-        BoardSquare square = board[(rows *x) + y];
+        BoardSquare square = board[(columns *x) + y];
         //check if square is untouched
         if (square.getState() == '-') square.setState('F');
         return;
@@ -99,7 +99,7 @@ public class Board {
           if ((x<0) || (x >= rows) || (y < 0) || (y >= columns)) return;
           
           //get square
-          BoardSquare square = board[(rows *x) + y];
+          BoardSquare square = board[(columns *x) + y];
           //check if square is untouched
           if (square.getState() == 'F') square.setState('-');
           return;
